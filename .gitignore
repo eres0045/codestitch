@@ -1,0 +1,5 @@
+node_modules/
+shots/
+__pycache__/
+deck/build_deck.py
+docs/research-notes-internal.md

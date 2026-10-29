@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1024">
+<title>CodeStitch — by FORTEC</title>
+<link href="css/impress-demo.css" rel="stylesheet">
+<link href="css/whycode.css" rel="stylesheet">
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are
+  presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use a modern browser.</p>
+</div>
+
+<div class="brandbar">CodeStitch <span>· FORTEC</span></div>
+
+<div id="impress"
+    data-transition-duration="1000"
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000">
+
+  <!-- 1 · COVER -->
+  <div id="step-1" class="step" data-x="0" data-y="0" data-scale="3">
+    <div class="kicker">AgentX Hackathon 2026 · PS-05 Bug-fix agent</div>
+    <h1 class="cover-title">CodeStitch</h1>
+    <p class="cover-sub">The multi-bug fixer that understands WHY<br>before it stitches.</p>
+    <div class="cover-team">
+      <span class="fortec">Team FORTEC</span>
+      Ronit Shrimankar (lead) · Anshul Kamthe
+    </div>
+    <p class="cover-built">Powered by the <b>WhyCode history graph</b></p>
+  </div>
+
+  <!-- 2 · PROBLEMS DEVELOPERS FACE -->
+  <div id="step-2" class="step" data-x="1700" data-y="400" data-rotate="12" data-scale="1">
+    <div class="kicker">01 · The problems developers face</div>
+    <h2>Bugs eat time —<br>and answers are missing</h2>
+    <ul class="rows">
+      <li><b>20–30% of developer time</b> goes to debugging — and 95% now also fix AI-written code.</li>
+      <li><b>Reports say “it doesn't work”</b> — no steps, no environment, no failing test to start from.</li>
+      <li><b>The cause is forgotten</b> — reasons scatter across old commits, tickets, and developers who left.</li>
+    </ul>
+    <p class="note">So most of debugging is not fixing. It is searching: for the repro, for the cause, for the why.</p>
+  </div>
+
+  <!-- 3 · PROBLEMS TODAY'S FIXERS GET WRONG -->
+  <div id="step-3" class="step" data-x="3300" data-y="1500" data-rotate="-8" data-scale="1">
+    <div class="kicker">02 · What today's fixers get wrong</div>
+    <h2>Confident fixes<br>that are wrong</h2>
+    <ul class="rows">
+      <li><b>Symptom fixes</b> — the error is hidden with a null check; the log goes quiet, the bug stays.</li>
+      <li><b>Fake-green fixes</b> — the patch passes old tests but misses what the code was supposed to do.</li>
+      <li><b>Regressions</b> — a fix in one place silently breaks features somewhere else.</li>
+      <li><b>Slow, costly, untrusted</b> — endless loops, burnt tokens, unsafe code, and a human must re-check all of it.</li>
+    </ul>
+  </div>
+
+  <!-- 4 · SOLUTION -->
+  <div id="step-4" class="step" data-x="1900" data-y="2900" data-rotate="12" data-scale="1">
+    <div class="kicker">03 · The solution</div>
+    <h2>8 agents, one pipeline,<br>one coordinator</h2>
+    <ol class="flow">
+      <li><span class="num">1</span><div><b>Triager</b> — real and reproducible? Rejects vague ones early.</div></li>
+      <li><span class="num">2</span><div><b>Localizer</b> — graph-guided to the exact method.</div></li>
+      <li><span class="num">3</span><div><b>Reproducer</b> — sandboxed failing test first. No repro, no fix.</div></li>
+      <li><span class="num">4</span><div><b>Parallel Fixers</b> — several candidates, isolated sandboxes.</div></li>
+      <li><span class="num">5</span><div><b>Adversarial Tester</b> — NEW intent tests, catch overfitting.</div></li>
+      <li><span class="num">6</span><div><b>Regression Gate</b> — targeted tests in loop, full suite at end.</div></li>
+      <li><span class="num">7</span><div><b>Reviewer + Human Gate</b> — human approves before merge.</div></li>
+    </ol>
+    <p class="note">Coordinator on top: orders multi-bug repairs by dependency.</p>
+  </div>
+
+  <!-- 5 · EVERY PROBLEM, ANSWERED -->
+  <div id="step-5" class="step" data-x="0" data-y="3700" data-rotate="0" data-scale="1">
+    <div class="kicker">04 · Every problem, answered</div>
+    <h2>How CodeStitch<br>solves each one</h2>
+    <div class="cards">
+      <div class="card"><div class="card-title">Vague reports</div>Triager asks clarifying questions, rejects early.</div>
+      <div class="card"><div class="card-title">Unknown cause</div>History graph finds origin commit + discussion.</div>
+      <div class="card"><div class="card-title">Symptom fixes</div>Repro-first: prove it, then fix the cause.</div>
+      <div class="card"><div class="card-title">Fake-green fixes</div>New intent tests + independent verification.</div>
+      <div class="card"><div class="card-title">Regressions</div>Targeted tests in loop, full suite at merge.</div>
+      <div class="card"><div class="card-title">Slow &amp; untrusted</div>Parallel fixers, tiered models, sandbox, human gate.</div>
+    </div>
+  </div>
+
+  <!-- 6 · CLOSING -->
+  <div id="step-6" class="step" data-x="0" data-y="1850" data-scale="5">
+    <div class="kicker">CodeStitch — by FORTEC</div>
+    <h2 class="close-title">Stitch the fix,<br>not the symptom.</h2>
+    <p class="repo">Build round: <b>Nov 11–12</b> · Proof: resolve rate · time-to-PR · regression rate · cost per fix.</p>
+    <p class="foot">Powered by the WhyCode history graph — our own engine, already proven on a large real-world repo.</p>
+  </div>
+
+</div>
+
+<div class="hint">
+  <p>Use a spacebar or arrow keys to navigate. Press <b>P</b> for the overview.</p>
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
